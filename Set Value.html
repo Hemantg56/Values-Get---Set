@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alert </title>
+</head>
+
+<body>
+    <p id="p1" style="color:#000"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia tempora soluta cum alias expedita accusamus maiores repellendus perspiciatis. Reprehenderit deserunt consectetur laudantium excepturi fugit corporis porro? Ab fuga eos unde? </p>
+    <h1 id="h1" style="background-color: aqua;">Heading-1</h1>
+    <a id="a1" href="x.html"> link</a>
+    <img id="im1" src="hem.jpg" alt="No Image" height="100px" width="100px">
+    <input id="i1" type="text" value="Hello">
+    <!-- Jo bhi Apne tag me likha ho vo java Script me chage karna ho to -->
+    <!-- aama attributte na value ne pan chage kari skay -->
+    <!-- ex. -->
+    <!-- 1. Tag Na  uder ni eliment ne -->
+    <!-- document.getElementById('ded').innerText='hemant' & innerHTML;  -->
+    <!--  -->
+    <!--  -->
+    <!-- 2. Tag na uder attribute ne vaule ne change karvanu hoy ena mate  -->
+    <!-- document.getElementById('ded').alt; -->
+
+
+    <script>
+        // document.getElementById('hem')
+        // console.log(document.getElementById('hem'))
+        // alert(document.getElementById('hem').innerText)
+
+        document.getElementById('p1').innerHTML = 'devendra';
+        document.getElementById('h1').innerHTML = 'Hemant';
+        document.getElementById('a1').innerHTML = 'Ganesh';
+        // document.getElementById('im1').innerHTML = 'Manish';
+        // document.getElementById('i1').innerHTML = 'devendra';
+
+        console.log(document.getElementById('p1'))
+        console.log(document.getElementById('h1'))
+        console.log(document.getElementById('a1'))
+        console.log(document.getElementById('im1'))
+        console.log(document.getElementById('i1'))
+
+
+        document.getElementById('p1').style = 'color:blue';
+        document.getElementById('h1').style = 'background:#000; color:#fff';
+        document.getElementById('a1').style = 'text-decoration:none; color:red';
+        document.getElementById('im1').alt = 'Server down';
+        document.getElementById('i1').value = 'Hemant';
+        document.getElementById('i1').style = 'height:100px; width:400px';
+    </script>
+</body>
+
+</html>
